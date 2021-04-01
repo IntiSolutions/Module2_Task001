@@ -1,0 +1,124 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-size: 100%;
+  margin: 0 auto;
+  width: 99%;
+}
+
+.container { 
+  display: grid;
+  grid-template-columns: 300px 300px;
+  grid-template-rows: 200px;
+  grid-template-areas: "Carla Marijn";
+  grid-gap: 10px;
+}
+
+.Carla {
+  grid-area: Carla;
+  border: 1px solid rgb(224, 223, 223);
+  display: grid;
+  grid-template-columns: 1fr 50px;
+  grid-template-rows: 1fr 55px;
+  grid-template-areas:
+    "text1 photo1"
+    "button1 button1";
+}
+
+.text1 {
+  grid-area: text1;
+  margin-top: 5px;
+}
+
+.text1 p:first-of-type {
+  font-size: 85%;
+  margin-top: 24px;
+}
+
+.grijs {
+  color: grey;
+}
+
+.photo1 {
+  grid-area: photo1;
+  margin-top: 5px;
+  margin-left: 0px;
+}
+
+.button1 {
+  grid-area: button1;
+  margin: 0 auto;
+  border: 1px solid rgb(224, 223, 223);
+  padding: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.button1 li {
+  float: left;
+  padding-top: 8px;
+  padding-bottom: 10px;
+  padding-right: 36.55px;
+  padding-left: 36.5px;
+  list-style-type: none;
+  border: 1px solid rgb(12, 204, 12);
+  color: green;
+}
+
+ul li:nth-child(2) {
+  color: red;
+  border: 1px solid rgb(236, 75, 75);
+}
+
+.Marijn {
+  grid-area: Marijn;
+  border: 1px solid rgb(224, 223, 223);
+  display: grid;
+  grid-template-columns: 1fr 50px;
+  grid-template-rows: 1fr 55px;
+  grid-template-areas:
+    "text2 photo2"
+    "button2 button2";
+}
+
+.text2 {
+  grid-area: text2;
+  margin-top: 5px;
+}
+
+.text2 p:first-of-type {
+  font-size: 85%;
+  margin-top: 24px;
+}
+
+.photo2 {
+  grid-area: photo2;
+  margin-top: 5px;
+  margin-left: 0px;
+}
+.button2 {
+  grid-area: button2;
+  margin: 0 auto;
+  border: 1px solid rgb(224, 223, 223);
+  padding: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.button2 > li {
+  float: left;
+  padding-top: 8px;
+  padding-bottom: 10px;
+  padding-right: 36.55px;
+  padding-left: 36.5px;
+  list-style-type: none;
+  border: 1px solid rgb(12, 204, 12);
+  color: green;
+}
+
+ul li:nth-child(2) {
+  color: red;
+  border: 1px solid rgb(236, 75, 75);
+}
